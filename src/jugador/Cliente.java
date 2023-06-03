@@ -25,6 +25,8 @@ public class Cliente implements Runnable{
     private String host = "localhost";
     
     //Variables del frame 
+    private String name;
+    
     private String mensaje;
     private Main frame;
     private JButton[][] botones;
@@ -69,8 +71,7 @@ public class Cliente implements Runnable{
             while(true){
                 //Recibimos el mensaje
                 mensaje = in.readUTF();
-                /*
-                El mensaje esta compuesto por una cadena separada por ; cada separacion representa un dato
+                /* El mensaje esta compuesto por una cadena separada por ; cada separacion representa un dato
                     mensaje[0] : representa X o O 
                     mensaje[1] : representa fila del tablero
                     mensaje[2] : representa columna del tablero
