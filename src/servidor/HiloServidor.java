@@ -6,10 +6,6 @@ import java.io.DataOutputStream;
 import java.net.Socket;
 import java.util.LinkedList;
 
-/**
- *
- * @author netosolis
- */
 public class HiloServidor implements Runnable{
     //Declaramos las variables que utiliza el hilo para estar recibiendo y mandando mensajes
     private Socket socket;

@@ -10,10 +10,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author netosolis
- */
 public class Cliente implements Runnable{
     //Declaramos las variables necesarias para la conexion y comunicacion
     private Socket cliente;
